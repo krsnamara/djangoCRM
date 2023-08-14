@@ -44,5 +44,5 @@ class Order(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
-        return self.customer.name
+        return self.product.name
 # Create your models here.
