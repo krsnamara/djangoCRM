@@ -130,8 +130,3 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-print("Database Name:", os.getenv("NAME"))
-print("Database User:", os.getenv("USER"))
-print("Database Password:", os.getenv("PASSWORD"))
-print("Database Host:", os.getenv("HOST"))
-print("Database Port:", os.getenv("PORT"))
