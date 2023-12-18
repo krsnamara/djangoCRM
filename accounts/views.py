@@ -60,10 +60,10 @@ def updateOrder(request, pk):
         form = OrderForm(request.POST, instance=order)
         if form.is_valid():
             form.save()
-            return redirect("/")
+            return redirect("customer", pk_test=order.customer.id)
 
     context = { "form": form,}
-    return render(request, "accounts/order_form.html", context)
+    return render(request, "accounts/update_order.html", context)
 
 def deleteOrder(request, pk):
     order = Order.objects.get(id=pk)
