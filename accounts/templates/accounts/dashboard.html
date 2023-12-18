@@ -35,14 +35,17 @@
     <h5>LAST 5 ORDERS</h5>
     <hr />
     <div class="card card-body">
+      {% comment %}
       <a class="btn btn-primary btn-sm btn-block" href="{% url 'create_order'%}"
         >Create Order</a
       >
+      {% endcomment %}
       <table class="table table-sm">
         <tr>
           <th>Products</th>
           <th>Date Ordered</th>
           <th>Status</th>
+          <th>Customer</th>
           <th>Update</th>
           <th>Remove</th>
         </tr>
@@ -52,6 +55,8 @@
           <td>{{order.product}}</td>
           <td>{{order.date_created}}</td>
           <td>{{order.status}}</td>
+          <td>{{ order.customer.name}}</td>
+
           <td>
             <a
               href="{% url 'update_order' order.id%}"
