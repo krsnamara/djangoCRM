@@ -2,8 +2,21 @@
 
 This Django project is a Customer Relationship Management (CRM) system. It provides a dashboard with information about total orders, orders delivered, and orders pending. Additionally, it allows users to manage customers and orders.
 <br>
+<br>
 It is built from a tutorial by
 [Dennis Ivy](https://www.youtube.com/playlist?list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO)
+<br>
+
+Deployment on Render using this
+[Pretty Printed](https://www.youtube.com/watch?v=wczWm8j4v9w)
+<br>
+
+Static Files
+[Asif Biswas](https://medium.com/@asif-biswas/deploy-a-django-app-with-static-files-in-just-5-minutes-for-free-on-render-fb78569cb35b)
+
+## Live Site
+
+You can access the live site of this CRM Django project [here](https://django-crm-dennis-ivy.onrender.com/).
 
 ## Getting Started
 
